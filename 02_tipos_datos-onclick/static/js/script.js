@@ -1,47 +1,50 @@
 // Declaración de variables
-let anioNacimiento = 2008;
-let numeroNegativo = -20;
-let ubicacionActual = "Santiago de chile";
-let valorBooleano = true;
-let fechaHoy = [1, 2, 3, 4];
-let objetoPersona = { nombre: "Ana", edad: 30 };
-let valorIndefinido;
-let valorNulo = null;
-const mes = "Junio";
+let anioNacimiento = 2008; // tipo numerico INT
+let Edad = 20; // numerico con partes decimales FLOAT
+let malChiste = "fantasma";
+let valorPregunta = true; //Valor verdadero o falso(0, 1)
+let arreglito = [1, 2, 3, ["arreglo"]]; //Array - lista de elementos
+let objetoUsuario = { nombre: "Alejenadro", edad: 18, correo: "alejandroandres@gmail.com" }; // Objet diccionario
+let valorCrearcuenta; // valor sin valor asignado - indefined
+let valorNumeronulo = null; // valor null - Null
+const año = "2016"; // constante - no varia
+
+
 
 // Funciones para mostrar cada valor con alert()
 function mostrarAnioNacimiento() {
+
     alert("año de nacimiento: " + anioNacimiento);
 }
 
-function mostrarNumeroNegativo() {
-    alert("Número negativo: " + numeroNegativo);
+function mostrarEdad() {
+    alert("Edad: " + mostrarEdad);
 }
 
-function mostrarUbicacionActual() {
-    alert("ubicacion: " + ubicacionActual);
+function mostrarMalchiste() {
+    alert("una sandia " + malChiste);
 }
 
-function mostrarBooleano() {
-    alert("Valor booleano: " + valorBooleano);
+function mostrarPregunta() {
+    alert("valo respuesta: " + valorPregunta);
 }
 
-function mostrarArreglo() {
-    alert("Arreglo de números: " + arregloNumeros);
+function mostrarArreglito() {
+    alert("Arreglo de números: " + arreglito);
 }
 
-function mostrarObjeto() {
-    alert("Objeto persona: " + JSON.stringify(objetoPersona));
+function mostrarObjetoUsuario() {
+    alert("Objeto usuario: " + JSON.stringify(objetoUsuario));
 }
 
-function mostrarIndefinido() {
-    alert("Valor indefinido: " + valorIndefinido);
+function mostrarCrearcuenta() {
+    alert("Valor cuenta nueva: " + valorCrearcuenta);
 }
 
-function mostrarNulo() {
-    alert("Valor nulo: " + valorNulo);
+function mostrarNumeronulo() {
+    alert("1/1 " + valorNumeronulo);
 }
 
-function mostrarConstante() {
-    alert("Constante mes: " + mes);
+function mostrarAñoconstante() {
+    alert("Año constante: " + año);
 }

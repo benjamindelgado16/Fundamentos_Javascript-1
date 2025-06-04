@@ -6,7 +6,7 @@ let valorPregunta = true; //Valor verdadero o falso(0, 1)
 let arreglito = [1, 2, 3, ["arreglo"]]; //Array - lista de elementos
 let objetoUsuario = { nombre: "Alejenadro", edad: 18, correo: "alejandroandres@gmail.com" }; // Objet diccionario
 let valorCrearcuenta; // valor sin valor asignado - indefined
-let valorNumeronulo = null; // valor null - Null
+let valorGeneronulo = null; // valor null - Null
 const año = "2016"; // constante - no varia
 
 
@@ -41,8 +41,8 @@ function mostrarCrearcuenta() {
     alert("Valor cuenta nueva: " + valorCrearcuenta);
 }
 
-function mostrarNumeronulo() {
-    alert("1/1 " + valorNumeronulo);
+function mostrarGeneronulo() {
+    alert("genero: " + valorGeneronulo);
 }
 
 function mostrarAñoconstante() {

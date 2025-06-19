@@ -133,8 +133,39 @@ function palabraMayuscula() {
     let letra = prompt("Ingresar palabra")
     let letraA = "A";
     if (letra[0] == letraA) {
-      alert("la palabra comienza con a mayuscula");
+        alert("la palabra comienza con a mayuscula");
     } else {
         alert(" la palabra no comienza con a mayuscula ");
+    }
+}
+/*Precio con descuento
+ Solicita el precio de un producto. 
+ Si el precio es mayor a 10000, 
+ muestra que aplica descuento. 
+ Si no, indica precio normal.*/
+
+
+function precioDescuento() {
+    let precio = prompt("Ingresar precio");
+    if (precio > 10000) {
+        alert("Descuento");
+    } else {
+        alert("precio normal");
+    }
+}
+/*Verificar si una persona puede conducir
+ Solicita la edad del usuario y si tiene licencia
+ (por ejemplo, respondiendo "sí" o "no"). 
+ Si tiene 18 o más y respondió que tiene 
+ licencia, muestra “Puede conducir”. 
+ Si no, muestra “No puede conducir”.*/
+
+function ingresarUsuario(){
+    let = edad = parseInt(prompt("¿Cual estu edad?"));
+    let = tienenLicencia = prompt("¿Tienes licencia de conducir?");
+    if (edad >= 18 && tieneLicencia == "si") {
+        alert("puede conducir");
+    } else {
+        alert("No puede conducir");
     }
 }

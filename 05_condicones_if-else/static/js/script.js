@@ -155,7 +155,7 @@ function precioDescuento() {
         alert(`El valor ingresado fue: ${precio}\n
             IVa : ${precio * iva}\n 
             precio total: ${precio * 1.19}`);
-        );
+
     } else {
         alert("precio normal");
     }
@@ -167,12 +167,97 @@ function precioDescuento() {
  licencia, muestra “Puede conducir”. 
  Si no, muestra “No puede conducir”.*/
 
-function ingresarUsuario(){
+function ingresarUsuario() {
     let = edad = parseInt(prompt("¿Cual estu edad?"));
     let = tienenLicencia = prompt("¿Tienes licencia de conducir?");
     if (edad >= 18 && tieneLicencia == "si") {
         alert("puede conducir");
     } else {
         alert("No puede conducir");
+    }
+}
+
+/* segunda parte tarea*/
+
+/*11.- Comparar la longitud de dos palabras
+Solicita dos palabras con prompt().
+ Compara cuántas letras tiene cada una
+  y muestra cuál es más larga o
+   si tienen el mismo largo.*/
+
+function compararPalabras() {
+    let compararPalabras = prompt("ingrese una palabra:");
+    let compararPalabra = prompt("ingrese otra palabra:");
+
+    if (compararPalabra.length > compararPalabra.length) {
+        alert(`"${compararPalabra}" es más larga que "${compararPalabra}"`);
+    } else if (copararPalabra.length > compararPalabra.length) {
+        alert(`"${compararPalabra}" es más larga que "${compararPalabra}"`);
+    } else {
+        alert("Ambas palabras tienen el mismo largo");
+    }
+}
+/*12.- Validar correo electrónico
+Pide al usuario que ingrese un correo.
+ Verifica si el texto contiene el 
+ símbolo @. Si lo tiene, muestra 
+ "Correo válido", si no, "Correo 
+ inválido".*/
+function validarCorreo() {
+    let validarCorreo = prompt("Ingrese su correo electrónico:");
+
+    if (validarCorreo.includes('@')) {
+        alert("Correo válido");
+    } else {
+        alert("Correo inválido");
+    }
+}
+/*13.- Verificar si un número 
+es positivo o negativo
+Solicita un número. 
+Muestra si es positivo, 
+negativo o cero.*/
+function verificarNumero() {
+    let verificarNumero = parseFloat(prompt("Ingrese un número:"));
+
+    if (verificarNumero > 0) {
+        alert("El número es positivo");
+    } else if (numero < 0) {
+        alert("El número es negativo");
+    } else {
+        alert("El número es cero");
+    }
+}
+/*14.- Saludo personalizado según hora
+Pide la hora actual (en formato 24 horas).
+ Si es antes de las 12,
+  muestra "Buenos días", si es entre 12 y 18,
+   "Buenas tardes", y si es mayor a 18, 
+   "Buenas noches".*/
+function saludar() {
+    let saludar = parseInt(prompt("Ingrese la hora actual (formato 24h):"));
+
+    if (saludar >= 0 && saludar < 12) {
+        alert("Buenos días");
+    } else if (saludar >= 12 && saludar < 18) {
+        alert("Buenas tardes");
+    } else if (saludar >= 18 && saludar <= 24) {
+        alert("Buenas noches");
+    } else {
+        alert("Hora no válida");
+    }
+}
+/*15.- Verificar si una palabra contiene la letra "e"
+Solicita una palabra. Verifica si contiene la letra
+ "e" (minúscula). Si la tiene, muestra "Contiene
+  la letra 'e'", si no, muestra "No contiene la
+   letra 'e'".*/
+function buscarLetraE() {
+    let buscarLetraE = prompt("Ingrese una palabra:");
+
+    if (buscarLetraE.includes('e')) {
+        alert("Contiene la letra 'e'");
+    } else {
+        alert("No contiene la letra 'e'");
     }
 }

@@ -146,9 +146,16 @@ function palabraMayuscula() {
 
 
 function precioDescuento() {
-    let precio = prompt("Ingresar precio");
+    //Añadir un porcentaje de descuento e IVA y mostrar.
+    let iva = 0.19;
+    let descuento = parseFloat(prompt("Ingrese el valor de descuento: ejemplo 20%"));
+    descuento *= 100; // operacion para llevar a decimal
+    let precio = parsefloat(prompt("Ingresar precio"));
     if (precio > 10000) {
-        alert("Descuento");
+        alert(`El valor ingresado fue: ${precio}\n
+            IVa : ${precio * iva}\n 
+            precio total: ${precio * 1.19}`);
+        );
     } else {
         alert("precio normal");
     }

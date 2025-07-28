@@ -278,3 +278,14 @@ function buscarLetraE() {
         alert("No contiene la letra 'e'");
     }
 }
+
+/*
+/*triple igualdad (===) es estricta igualdad*/
+/*doblo igualdad (==) es para comparar dos valores y determinar si son iguales*/
+/* el parseInt es lo que combierte una cadena de texto en una cadena de numero entero*/
+/* el string es una cadena de texto*/
+/* por que el prompt es un string = es para capturar la entrada de usuario como texto*/
+/* el prompt es una funcion */
+/* que es una function: es una bloque de instrucciones reutilizable, osea ocuparlo cuando sea necesario*/
+/* && es una compuerta logica, utilizado para condiciones*/
+/*else if es una estructura de control para condiciones multiples de forma secuencial.*/

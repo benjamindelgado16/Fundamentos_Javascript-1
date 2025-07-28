@@ -175,14 +175,14 @@ function licenciaEdad() {
         let = tienenLicencia = prompt("¿Tienes licencia de conducir?");
     if (tienenLicencia == "si") {
         alert("puede conducir");
-    } else if (tienenLicencia == "no"){
+    } else if (tienenLicencia == "no") {
         alert("No puede conducir");
     } else {
         alert("Ingrese valores validos");
     }
 }
 
-/* RESPUESTAS DE LA SEGUNDA TAREA*/ 
+/* RESPUESTAS DE LA SEGUNDA TAREA*/
 
 /*
 11.- Comparar la longitud de dos palabras
@@ -193,14 +193,17 @@ Solicita dos palabras con prompt().
    */
 
 function compararPalabras() {
-    let compararPalabras = prompt("ingrese una palabra:");
-    let compararPalabra = prompt("ingrese otra palabra:");
-    if (compararPalabras.length > compararPalabra.length) {
-        alert(`"${compararPalabras}" es más larga que "${compararPalabra}"`);
-    } else if (compararPalabras.length < compararPalabra.length) {
-        alert(`"${compararPalabra}" es más larga que "${compararPalabras}"`);
+    let pal1 = prompt("ingrese una palabra:");
+    let pal2 = prompt("ingrese otra palabra:");
+    if (pal1 == "" && pal2 == "") {
+        alert("ingrese un valorpara trabajar... ")
+    } else if (pal1.length < pal2.length) {
+        alert(`La palabra mas larga es ${pal2} con ${pal2.length} caracteres`)
+    } else if (pal1.length == pal2.length) {
+        alert(` Las palabras ${pal2} y ${pal1} tiene mismo largo con:\n
+            ${pal1.length} caracteres`)
     } else {
-        alert("Ambas palabras tienen el mismo largo");
+        alert(` La palabra mas larga es ${pal1} con ${pal1.length} caracteres`)
     }
 }
 /*
@@ -213,13 +216,13 @@ Pide al usuario que ingrese un correo.
  */
 function validarCorreo() {
     let validarCorreo = prompt("Ingrese su correo electrónico:");
-
     if (validarCorreo.includes('@')) {
-        alert("Correo válido");
+        alert(`el correo ${validarCorreo} es valido`);
     } else {
-        alert("Correo inválido");
+        alert(`El correo ${validarCorreo} es invalido`);
     }
 }
+
 /*
 13.- Verificar si un número 
 es positivo o negativo
@@ -228,16 +231,16 @@ Muestra si es positivo,
 negativo o cero.
 */
 function verificarNumero() {
-    let verificarNumero = parseFloat(prompt("Ingrese un número:"));
-
-    if (verificarNumero > 0) {
+    let num = parseFloat(prompt("Ingrese un número:"));
+    if (num > 0) {
         alert("El número es positivo");
-    } else if (numero < 0) {
-        alert("El número es negativo");
+    } else if (num === 0) {
+        alert("El número es 0");
     } else {
-        alert("El número es cero");
+        alert("El número es negativo");
     }
 }
+
 /*14
 .- Saludo personalizado según hora
 Pide la hora actual (en formato 24 horas).

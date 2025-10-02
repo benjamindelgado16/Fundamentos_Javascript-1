@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ebb35f;
+    font-family: "Fugaz One", sans-serif;
+}
+
+/* barra de navegacion  */
+.opciones {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #502314;
+}
+
+.nav-bar img {
+    width: 80px;
+}
+
+/* tarjeta */
+.fila-1{
+    display: flex;
+    justify-content: space-between;
+}
+.fila-2{
+    display: flex;
+    justify-content: space-between;
+}
+.fila-3{
+    display: flex;
+    justify-content: space-between;
+}
+.card-1{
+    margin: 20px;
+}
+.card-1 img{
+    border-radius: 8px;
+}
+.card-1 p{
+    margin: 10px;
+    background-color: #fff ;
+}
+.card-1 h5{
+    margin: 10px;
+}
+
+
+.card-1 button{
+    color: #d62300;
+    border-radius: 40px;
+    height: 50px;
+    width: 150px;
+    border-color: #d62300;
+}
+
